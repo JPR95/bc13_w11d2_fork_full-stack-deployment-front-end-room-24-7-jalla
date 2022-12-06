@@ -16,6 +16,8 @@ function App() {
   // Fetching shopping list data from shopping list API.
   useEffect(() => {
     async function getShoppingList() {
+      console.log("Here I am");
+      console.log("Rock you like a hurricane");
       const response = await fetch(`${url}/items`);
       const data = await response.json(response);
       console.log(data);
